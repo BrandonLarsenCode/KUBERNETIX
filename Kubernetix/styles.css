@@ -1,0 +1,441 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-image: -webkit-image-set(url("https://static.wixstatic.com/media/11062b_d47c545ff6ba404e8c72dabf8001aaf4~mv2.jpeg/v1/fill/w_980,h_1153,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_d47c545ff6ba404e8c72dabf8001aaf4~mv2.jpeg") 1x);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden
+}
+
+.navbar {
+    background-color: rgba(51, 51, 51, 0.8); 
+    color: white;
+    padding: 3rem;
+}
+
+.navbar-brand {
+    font-size: 3rem;
+    display: inline-block;
+    color: #0acb00;
+}
+
+.navbar-nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    float: right;
+}
+
+.nav-item {
+    display: inline;
+    margin: 0 10px;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: #0acb00;
+}
+
+#body-content {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+#body-content h1 {
+    font-size: 3rem;
+}
+
+.offers {
+    text-align: center;
+    margin-top: 20px;
+}
+.offers p {
+    font-size: 25px;
+}
+
+#logo1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    
+    animation: floatIn 1s forwards;
+    padding-bottom: 70px;
+}
+
+#logo1 img {
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+}
+
+.solution-container {
+    justify-items: center;
+    justify-content: center;
+    justify-self: center;
+    display: inline;
+    margin-right: auto;
+    margin-left: auto;
+    animation: floatIn 1s forwards;
+}
+
+
+
+/*.solution-block {
+    display: inline-block;
+    width: 300px;
+    height: 200px;
+    background-color: rgb(218, 218, 218);
+    margin: 0 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    line-height: 200px;
+    font-size: 15px;
+    text-align: center;
+    color: black;
+    font-style: normal;
+    font-weight: bold;
+    opacity: 0;
+    animation: floatIn 1s forwards; */
+   
+    .solution-block {
+        display:table-cell;
+       font-size: 20px;
+       width: 200px;
+        height: 200px;
+        background-color: rgb(218, 218, 218);
+        padding-top: 30px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        color: black;
+        font-style: normal;
+        font-weight: bold;
+        opacity: 0;
+        animation: floatIn 1s forwards;
+        padding-block: 10px;
+        padding-inline: 30px;
+        padding-bottom: 10px;
+        
+    }
+    
+    .solution-block i {
+        font-size: 2rem; /* Adjust icon size */
+     padding-top: 50px;
+     display: 
+     inline-block;
+    }
+    
+    /* Ensure the solution-container ul has no default padding/margin */
+    .solution-container ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: 
+        inline-block;
+    }
+    
+    /* Keyframes for the floating effect */
+    @keyframes floatIn {
+        from {
+            transform: translateY(-50px);
+            opacity: 0;
+        }
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+
+
+@keyframes floatIn {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.full-width-block {
+    width: 100%;
+    padding-top: 40px;
+    height: 500px;
+    background: linear-gradient(to right, rgb(0, 0, 0), rgb(10, 203, 0) 50%, rgb(0, 0, 0));
+    font-size: 2rem;
+    color: black;
+}
+
+.full-width-block2 {
+    width: 100%;
+    height: 500px;
+    background: rgb(79, 79, 79);
+    font-size: 2rem;
+    color: black;
+}
+
+h1 {
+    font-size: 5rem;
+    margin-top: 70px;
+    text-align: center;
+}
+
+.h2 {
+    font-size: 3rem;
+    margin-top: 70px;
+    text-align: center;
+    color: white;
+}
+
+p {
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    margin-bottom: 90px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.btn1 {
+    background-color: rgb(250, 253, 250);
+    color: rgb(1, 1, 1);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 100px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 70px;
+    margin-left: 43%;
+    margin-right: 45%;
+    height: 50px;
+    width: 200px;
+}
+
+.btn2 {
+    background-color: rgb(250, 255, 250);
+    color: rgb(9, 9, 9);
+    border: none;
+    padding: 10px 5px;
+    border-radius: 100px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 100px;
+    margin-left: 43%;
+    margin-right: 45%;
+    height: 50px;
+    width: 200px;
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.services-section,
+.hours-section,
+.contact-section,
+.social-media-section,
+.brand-section {
+    flex: 1;
+    margin: 10px;
+    background-color: #1d1d1d;
+    padding: 20px;
+    display: inline-block;
+}
+
+h2 {
+    color: #0acb00;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+ul {
+   list-style:square;
+   list-style-type:circle;
+    margin: 12px 0;
+    padding: 0;
+    color: white;
+}
+
+li,
+p {
+    font-size: 1rem;
+    margin: 1px 0;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: left;
+    gap: 10px;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    background-color: #333;
+    color: #000;
+    justify-content: left;
+    align-items: left;
+    border-radius: 50%;
+    cursor: pointer;
+    border-color: #020202;
+}
+
+.icon.facebook {
+    background-color: #3b5998;
+}
+
+.icon.instagram {
+    background-color: #e4405f;
+    color: #000;
+}
+
+.brand-section h1 {
+    font-size: 2rem;
+    margin-top: 5px;
+    color: #0acb00;
+}
+
+.icon:hover {
+    opacity: 0.8;
+}
+
+footer {
+    background-color: #1d1d1d;
+}
+
+
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 1.5rem;
+    }
+
+    .navbar-brand {
+        font-size: 3rem;
+    }
+
+    .navbar-nav {
+        float: none;
+        text-align: center;
+    }
+
+    .navbar-nav .nav-item {
+        margin: 10px 50px;
+        text-align: right;
+    }
+
+    #body-content h1 {
+        font-size: 2rem;
+    }
+
+    #logo1 {
+        margin-top: 50px;
+    }
+
+    .solution-block {
+        width: 200px;
+        height: 100px;
+        padding-top: 10px;
+        padding-bottom: 20px;
+        padding: 50px; 
+    }
+
+    .solutions-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .solution-block p {
+        font-size: 1px;
+        text-align: center;
+    }
+
+    .btn1,
+    .btn2 {
+        margin-left:30%;
+        width: 40%;
+    }
+
+    .content-wrapper {
+        flex-direction: column;
+    }
+
+    .services-section,
+    .hours-section,
+    .contact-section,
+    .social-media-section,
+    .brand-section {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1rem;
+        margin: 20px 10%;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 1rem;
+    }
+
+    .navbar-brand {
+        font-size: 1rem;
+    }
+
+    .navbar-nav .nav-item {
+        margin: 5px 0;
+    }
+
+    #body-content h1 {
+        font-size: 1.5rem;
+    }
+
+    #logo1 {
+        margin-top: 30px;
+    }
+
+    .btn1,
+    .btn2 {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 0.8rem;
+        margin: 20px 5%;
+    }
+}
